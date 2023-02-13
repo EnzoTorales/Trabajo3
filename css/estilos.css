@@ -9,6 +9,10 @@ body {
   background-color: #000000;
 }
 
+h1 {
+  display: none;
+}
+
 .LogoPrincipal {
   position: absolute;
   padding: 0px 25px;
@@ -88,21 +92,21 @@ nav .botonNav:hover {
     background: url("../images/grupo.jpg");
     width: 100%;
   }
-  footer {
+  .footerinicio {
     display: inline-block;
     width: 100%;
     padding: 50px;
   }
-  footer .redes {
+  .footerinicio .redesinicio {
     flex-direction: column;
   }
-  footer a {
+  .footerinicio a {
     padding: 20px;
   }
-  footer img {
+  .footerinicio img {
     width: 100px;
   }
-  footer .pie {
+  .footerinicio .pieinicio {
     padding-top: 20px;
   }
 }
@@ -152,21 +156,22 @@ nav .botonNav:hover {
     margin-left: -300%;
   }
 }
-footer {
+.footerinicio, .footer {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
 
-.copy {
+.copyinicio, .copy {
   color: #ffffff;
 }
 
-.redes {
+.redesinicio, .redes {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 5px;
 }
-.redes img {
+.redesinicio img, .redes img {
   padding: 0 20px;
   filter: invert(100%);
 }

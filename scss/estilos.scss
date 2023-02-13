@@ -15,6 +15,10 @@ body {
     background-color: $colorPrimario
 }
 
+h1 {
+    display: none;
+}
+
 
 //Navbar
 
@@ -113,12 +117,12 @@ body {
     width: 100%;
 }
 
-footer {
+.footerinicio {
     display: inline-block;
     width: 100%;
     padding: 50px;
 
-    .redes{
+    .redesinicio{
         flex-direction: column;        
     }
     a {
@@ -127,7 +131,7 @@ footer {
     img {
         width: 100px;
     }
-    .pie {
+    .pieinicio {
         padding-top: 20px;
     }
 
@@ -181,16 +185,17 @@ footer {
 
 //footer
 
-footer {
+.footerinicio, .footer{
     text-align: center;
     font-family: $fonts;
 }
 
-.copy{
+.copyinicio, .copy{
     color: $colorblanco;
 }
 
-.redes {
+.redesinicio, .redes {
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 5px;
