@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+.fondocolor {
+  background-color: #150050;
+}
+
+.fondocolor-uno {
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -126,6 +134,7 @@ nav .botonNav:hover {
 .redes {
   width: 100%;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 .redesinicio img,
@@ -154,7 +163,7 @@ section {
 
 .contenidoFechas {
   padding-bottom: 5px;
-  z-index: -100;
+  z-index: -1;
 }
 
 .caja {
@@ -171,6 +180,10 @@ section {
   color: #000000;
 }
 
+.colorfondo {
+  background-color: #150050;
+}
+
 .submit {
   margin-bottom: 5px;
   color: #150050;
@@ -181,6 +194,17 @@ section {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   border-radius: 5px;
+}
+
+.fondoimg {
+  background-image: url("../images/grupo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 800px) {

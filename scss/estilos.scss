@@ -108,6 +108,8 @@ nav {
     }
 
 
+
+
 }
 
 @keyframes slide {
@@ -165,8 +167,8 @@ nav {
 
 .redesinicio,
 .redes {
-    width: 100%;
-    display: flex;
+    width: 100%;  
+    @include flex (flex, nowrap);
     justify-content: center;
 
 
@@ -196,8 +198,8 @@ section {
 }
 
 .contenido {
-    display: flex;
-    flex-wrap: wrap;
+    @include flex (flex, wrap);
+
 }
 
 
@@ -206,7 +208,7 @@ section {
 
 .contenidoFechas {
     padding-bottom: 5px;
-    z-index: -100;
+    z-index: -1;
 }
 
 .caja {
@@ -223,6 +225,10 @@ section {
     color: $colorPrimario;
 }
 
+.colorfondo {
+    background-color: $colorSecundario;
+}
+
 .submit {
     margin-bottom: 5px;
     color: $colorSecundario;
@@ -235,7 +241,16 @@ section {
     border-radius: 5px;
 }
 
+.fondoimg {
+    background-image: url("../images/grupo.jpg");
+    background-position: center;
+    background-size: cover;
+}
 
+.form {
+    display: flex;
+    justify-content: center;
+}
 
 
 @media (max-width: 800px) {

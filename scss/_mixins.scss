@@ -7,3 +7,23 @@ $fondoBtn: (
     'cuatro': 0 0 200px $colorComplementario,
 );
 
+
+
+// mixin
+
+@mixin flex ($visor, $linea) {
+    display: $visor;
+    flex-wrap: $linea;
+}
+
+
+// extend
+
+.fondocolor {
+    background-color: $colorSecundario;
+}
+
+.fondocolor-uno {
+    border-radius: 10px;
+}
+
