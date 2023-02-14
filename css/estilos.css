@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #ffffff;
 }
 
 body {
   background-color: #000000;
 }
 
-h1 {
+.titulo {
   display: none;
 }
 
@@ -60,56 +61,6 @@ nav .botonNav:hover {
   display: none;
 }
 
-@media (max-width: 800px) {
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #150050;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  ul li a {
-    font-size: 20px;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-  .carrousel {
-    display: none;
-  }
-  body {
-    background: url("../images/grupo.jpg");
-    width: 100%;
-  }
-  .footerinicio {
-    display: inline-block;
-    width: 100%;
-    padding: 50px;
-  }
-  .footerinicio .redesinicio {
-    flex-direction: column;
-  }
-  .footerinicio a {
-    padding: 20px;
-  }
-  .footerinicio img {
-    width: 100px;
-  }
-  .footerinicio .pieinicio {
-    padding-top: 20px;
-  }
-}
 .carrousel {
   width: 100%;
   height: 460px;
@@ -156,24 +107,90 @@ nav .botonNav:hover {
     margin-left: -300%;
   }
 }
-.footerinicio, .footer {
+.footerinicio,
+.footer {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
 
-.copyinicio, .copy {
+.copyinicio,
+.copy {
   color: #ffffff;
 }
 
-.redesinicio, .redes {
+.redesinicio,
+.redes {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding-top: 5px;
 }
-.redesinicio img, .redes img {
-  padding: 0 20px;
+.redesinicio img,
+.redes img {
+  width: 70px;
+  padding: 5px 20px;
   filter: invert(100%);
+}
+
+section {
+  clear: both;
+}
+
+.titulopages {
+  text-align: center;
+}
+
+.escuchanos {
+  padding-top: 5px;
+}
+
+.contenido {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #150050;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .carrousel {
+    display: none;
+  }
+  body {
+    background: url("../images/grupo.jpg");
+    width: 100%;
+  }
+  .footerinicio {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 85vh;
+    align-items: flex-end;
+  }
+  .footerinicio .redesinicio a {
+    padding: 0 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
