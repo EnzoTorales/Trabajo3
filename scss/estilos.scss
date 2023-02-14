@@ -253,9 +253,11 @@ section {
 }
 
 
+
 @media (max-width: 800px) {
     .checkbtn {
         display: block;
+        
     }
 
     ul {
@@ -267,6 +269,7 @@ section {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 2000;
 
         li {
             display: block;
