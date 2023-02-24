@@ -11,6 +11,13 @@ $fondoBtn: (
 
 // mixin
 
+@mixin inicio($margen,$interno,$box){
+    margin: $margen;
+    padding: $interno;
+    box-sizing: $box;
+}
+
+
 @mixin flex ($visor, $linea) {
     display: $visor;
     flex-wrap: $linea;

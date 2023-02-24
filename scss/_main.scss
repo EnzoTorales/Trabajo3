@@ -1,0 +1,357 @@
+* {
+    @include inicio (0, 0, border-box);
+    color: $colorblanco;
+
+    body {
+        background-color: $colorPrimario
+    }
+}
+
+
+.titulo {
+    display: none;
+}
+
+
+//Navbar
+
+.LogoPrincipal {
+    position: absolute;
+    padding: 0px 25px;
+}
+
+nav {
+    background: $colorPrimario;
+    height: 80px;
+    width: 100%;
+
+    ul {
+        float: right;
+        margin-right: 20px;
+    }
+
+    li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+
+    .botonNav {
+        color: #fff;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $fonts;
+
+        &:hover {
+            background: $colorTerciario;
+            box-shadow: map-get($map: $fondoBtn, $key: 'uno'),
+                map-get($map: $fondoBtn, $key: 'dos'),
+                map-get($map: $fondoBtn, $key: 'tres'),
+                map-get($map: $fondoBtn, $key: 'cuatro');
+        }
+    }
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: $colorblanco;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+
+
+//slider
+
+.carrousel {
+    width: 100%;
+    height: 460px;
+    margin: auto;
+    overflow: hidden;
+
+    ul {
+        display: flex;
+        padding: 0;
+        width: 400%;
+
+        animation: slide 20s infinite alternate ease-in-out;
+    }
+
+    li {
+        width: 100%;
+        list-style: none;
+    }
+
+    img {
+        width: 100%;
+    }
+
+
+
+
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+
+//footer
+
+.footerinicio,
+.footer {
+
+    font-family: $fonts;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    align-items: flex-end;
+}
+
+.copyinicio,
+.copy {
+    color: $colorblanco;
+}
+
+.redesinicio,
+.redes {
+    width: 100%;
+    @include flex (flex, nowrap);
+    justify-content: center;
+
+
+    img {
+        width: 70px;
+        padding: 5px 20px;
+        filter: invert(100%);
+    }
+}
+
+//Section
+
+section {
+    clear: both;
+}
+
+
+.titulopages {
+    text-align: center;
+}
+
+
+// Page Escuchanos
+
+.escuchanos {
+    padding-top: 5px;
+}
+
+.contenido {
+    @include flex (flex, wrap);
+
+}
+
+
+//pages fechas
+
+
+.contenidoFechas {
+    padding-bottom: 5px;
+    z-index: -1;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+}
+
+.fechas {
+    padding-left: 5px;
+    width: 50%;
+}
+
+.color {
+    color: $colorPrimario;
+}
+
+.colorfondo {
+    background-color: $colorSecundario;
+}
+
+.submit {
+    margin-bottom: 5px;
+    color: $colorSecundario;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: $fonts;
+    border-radius: 5px;
+}
+
+.fondoimg {
+    background-image: url("../images/grupo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 800px) {
+    .checkbtn {
+        display: block;
+
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: $colorSecundario;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2000;
+
+        li {
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+
+            a {
+                font-size: 20px;
+            }
+        }
+
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .carrousel {
+        display: none;
+    }
+
+    body {
+        background: url("../images/grupo.jpg");
+        width: 100%;
+    }
+
+    .footerinicio {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: flex-end;
+
+        .redesinicio a {
+            padding: 0 20px;
+        }
+
+    }
+
+    .novedades {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        .novedadesCaja {
+            margin: 10px auto;
+        }
+    }
+
+}
+
+.novedadesTitulo {
+    font-family: $fonts;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    a {
+        text-decoration: none;
+    }
+    
+}
+.novedades {
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+
+    .novedadesCaja {
+        @include flex (flex, wrap);
+        height: 360px;
+        width: 300px;
+        background-color: $colorSecundario;
+               
+
+        .novedadesCajaImagen {
+            width: 100%;
+            height: 200px;
+            background-color: aquamarine;
+            
+        }
+        .novedadesCaja2 {
+            padding: 5px;
+        }
+    
+
+    }
+    .novedadesCaja:hover {
+        box-shadow: map-get($map: $fondoBtn, $key: 'uno'),
+                map-get($map: $fondoBtn, $key: 'dos'),
+                map-get($map: $fondoBtn, $key: 'tres'),
+                map-get($map: $fondoBtn, $key: 'cuatro');
+    }
+
+}   
