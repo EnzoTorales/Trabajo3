@@ -197,15 +197,21 @@ section {
 
 //pages fechas
 
+.container {
+    padding-top: 20px;
+}
 
 .contenidoFechas {
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     z-index: -1;
+    
+
 }
 
 .caja {
     display: flex;
     justify-content: center;
+    
 }
 
 .fechas {
@@ -233,17 +239,34 @@ section {
     border-radius: 5px;
 }
 
+.logoFechas {
+    width: 100%;
+    padding-top: 15px;
+}
+
 .fondoimg {
     background-image: url("../images/grupo.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.form {
-    display: flex;
-    justify-content: center;
-}
+// pagina formulario 
 
+.formularioBase {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+    .formularioArticuloImg {
+        padding:10px;
+        flex-grow: 1;
+        .formularioImagen {            
+        border-radius: 10px;        
+        }
+    }
+    .form {
+        flex-grow: 3;
+    }
+}
 
 
 @media (max-width: 800px) {
@@ -308,8 +331,13 @@ section {
             margin: 10px auto;
         }
     }
-
+    .logoFechas, .formularioArticuloImg{
+        display: none;
+    }
 }
+
+
+// Cajas de pagina de inicio
 
 .novedadesTitulo {
     font-family: $fonts;
