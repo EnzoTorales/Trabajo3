@@ -383,3 +383,31 @@ section {
     }
 
 }   
+
+
+// Pagina Banda
+
+.cajasBanda{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 10px;
+}
+.cajasBandaInfo {
+    padding-top: 50px;
+}
+a {
+    text-decoration: none;
+}
+
+.volverAlInicio {
+    text-align: right;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+.cajasVinculo:hover {
+    box-shadow: map-get($map: $fondoBtn, $key: 'uno'),
+                map-get($map: $fondoBtn, $key: 'dos'),
+                map-get($map: $fondoBtn, $key: 'tres'),
+                map-get($map: $fondoBtn, $key: 'cuatro');
+}

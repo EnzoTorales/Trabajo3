@@ -316,4 +316,28 @@ section {
   box-shadow: 0 0 5px #610094, 0 0 25px #610094, 0 0 50px #610094, 0 0 200px #610094;
 }
 
+.cajasBanda {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.cajasBandaInfo {
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.volverAlInicio {
+  text-align: right;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+.cajasVinculo:hover {
+  box-shadow: 0 0 5px #610094, 0 0 25px #610094, 0 0 50px #610094, 0 0 200px #610094;
+}
+
 /*# sourceMappingURL=estilos.css.map */

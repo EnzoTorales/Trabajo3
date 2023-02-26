@@ -21,7 +21,7 @@
     <main class="fondoimg">
 
         <!-- Navbar Inicio -->
-        <nav>
+        <nav id="inicio">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <img src="../images/icons/menu.png" alt="Menu Hamburguesa">
@@ -42,121 +42,307 @@
 
         <!-- contenido inicio -->
 
-        <div class="accordion" id="accordionExample">
-            <div>
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h3>Quienes Somos</h3>
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>Es una banda argentina de rock alternativo, formada en el año 1991. Al principio fueron parte
-                            del «nuevo rock argentino», movimiento compuesto por bandas como Juana La Loca, El Otro Yo,
-                            Peligrosos Gorriones y Los Brujos.</p>
+        <h2 class="novedadesTitulo">Integrantes</h2>
+        <section class="cajasBanda novedades">
+            <article class="card text-bg-dark mb-3 cajasVinculo">
+                <a href="#voz">
+                    <img src="../images/integrantes/cantante.png" class="card-img-top" alt="cantante de la banda">
+                    <div class="card-body">
+                        <p class="card-text">Voz: Juan Cruz</p>
+                </a>
+                </div>
+            </article>
+            <article class="card text-bg-dark mb-3 cajasVinculo">
+                <a href="#guitarra">
+                    <img src="../images/integrantes/guitarrista.png" class="card-img-top" alt="guitarrista de la banda primer plano">
+                    <div class="card-body">
+                        <p class="card-text">Guitarra: Marce Aquino</p>
+                </a>
+                </div>
+            </article>
+            <article class="card text-bg-dark mb-3 cajasVinculo">
+                <a href="#bajo">
+                    <img src="../images/integrantes/bajista.png" class="card-img-top" alt="bajista de la banda primer plano">
+                    <div class="card-body">
+                        <p class="card-text">Bajo: Indio Adrian Teotis</p>
+                </a>
+                </div>
+            </article>
+            <article class="card text-bg-dark mb-3 cajasVinculo">
+                <a href="#bateria">
+                    <img src="../images/integrantes/baterista.png" class="card-img-top" alt="baterista de la banda primer plano">
+                    <div class="card-body">
+                        <p class="card-text">Bateria: Tano Hernandez</p>
+                </a>
+                </div>
+            </article>
+        </section>
+
+
+        <h2 class="novedadesTitulo">La Banda</h2>
+        <section class="cajasBanda novedades">
+            <article class="card text-bg-dark mb-3 cajasVinculo">
+                <a href="#bio">
+                    <img src="../images/integrantes/biografia.png" class="card-img-top" alt="foto de banda completa">
+                    <div class="card-body">
+                        <p class="card-text">Biografia</p>
+                </a>
+                </div>
+            </article>
+            <article class="card text-bg-dark mb-3 cajasVinculo">
+                <a href="#influencias">
+                    <img src="../images/integrantes/influencias.png" class="card-img-top" alt="foto de torso con remera de los stones">
+                    <div class="card-body">
+                        <p class="card-text">Influencias</p>
+                </a>
+                </div>
+            </article>
+            <article class="card text-bg-dark mb-3 cajasVinculo">
+                <a href="#discografia">
+                    <img src="../images/logo.png" class="card-img-top" alt="logo de la banda tribus">
+                    <div class="card-body">
+                        <p class="card-text">Discografia</p>
+                </a>
+                </div>
+            </article>
+            <article class="card text-bg-dark mb-3 cajasVinculo">
+                <a href="#recitales">
+                    <img src="../images/integrantes/recitales.png" class="card-img-top" alt="banda tocando en vivo">
+                    <div class="card-body">
+                        <p class="card-text">Recitales</p>
+                </a>
+                </div>
+            </article>
+        </section>
+
+
+
+
+        <section class="cajasBandaInfo">
+            <article class="card text-bg-dark mb-3" id="voz">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/integrantes/cantanteprincipal.png" class="img-fluid rounded-start" alt="cantante en primer plano">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Voz: Pablo Pino</h3>
+                            <p class="card-text">Pablo Pino, cantor y compositor rosarino, presenta su proyecto solista
+                                “Pino KR”, que corre en paralelo a la banda que integra desde 1993, “Cielo Razzo”. “Son
+                                canciones que podría decirse con aire más nacional, más de folclore; digo aire, pero no
+                                estoy trabajando el género.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                 </div>
+            </article>
+
+            <div class="volverAlInicio">
+                <a href="#inicio"><small>Volver al Inicio</small></a>
             </div>
 
-            <div>
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h3>Historia</h3>
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>Durante más de dos décadas, Babasónicos se ha encargado de desestabilizar al rock argentino
-                            desde el mismísimo corazón de la bestia. Pocas bandas han logrado que canciones tan
-                            incorrectas se conviertan en hits radiales y que estadios enteros, en toda América latina,
-                            canten verdaderas barrabasadas como si se tratara de dulces e inofensivas cancioncitas pop.
-                            Con determinación, talento e inteligencia, el grupo sostuvo una trayectoria ascendente,
-                            desde los sótanos en los que se gestó el Nuevo Rock Argentino de los 90 hasta ámbitos que
-                            albergan a decenas de miles de personas. Luego de 11 discos oficiales editados y más de 22
-                            años de giras constantes por toda Latinoamérica, la búsqueda continua.</p>
+            <article class="card text-bg-dark mb-3" id="guitarra">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/integrantes/guitarristaprincipal.png" class="img-fluid rounded-start" alt="guitarrista en primer plano">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Guitarra: Pablo Cano</h3>
+                            <p class="card-text">Pablo Daniel Cano, (Buenos Aires, Argentina; 15 de julio de 1963) más
+                                conocido por su nombre artístico Sarco, es cantautor y guitarrista legendario de Ratones
+                                Paranoicos, desde el inicio hasta el final de la banda (1983 - 2011). Luego el grupo
+                                regresó en 2017 y Ratones Paranoicos sigue estando vigente. Al día de hoy encabeza su
+                                banda solista y se espera el lanzamiento de su último material a fines de 2022.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                 </div>
+            </article>
+
+            <div class="volverAlInicio">
+                <a href="#inicio"><small>Volver al Inicio</small></a>
             </div>
 
-            <div>
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <h3>Voz</h3>
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>Adrián Rodríguez, conocido artísticamente como Adrián Dárgelos, es un cantante, compositor y
-                            escritor argentino, líder del grupo musical Babasónicos.
-                            Nacimiento: 3 de enero de 1969 (edad 54 años), Monte Chingolo</p>
+            <article class="card text-bg-dark mb-3" id="bajo">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/integrantes/bajistaprincipal.png" class="img-fluid rounded-start" alt="bajista en primer plano">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Bajo: Fabian Quintero</h3>
+                            <p class="card-text">Fabián Quintiero (Buenos Aires, 22 de enero de 1966) es un músico de
+                                rock, maestro mayor de obras y cocinero. Es conocido también con el agregado de su apodo
+                                «Vön», ocurrencia de Miguel Zavaleta del grupo Suéter, como Fabián Vön Quintiero, y
+                                también como el Zorro o el Zorrito (ocurrencia del músico Daniel Melingo).</p>
+
+                            <p> Fue integrante de Suéter entre 1984 y 1985, y tecladista de Soda Stereo entre 1985 y
+                                1987. Integrante de la banda de Charly García entre 1987 y 1995, también integró el
+                                grupo Los Ratones Paranoicos entre 1997 y 2007. Desde 2009 forma parte de la nueva banda
+                                soporte de Charly García, estando a cargo de los teclados y programación.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                 </div>
+            </article>
+
+            <div class="volverAlInicio">
+                <a href="#inicio"><small>Volver al Inicio</small></a>
             </div>
 
-            <div>
-                <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <h3>Bajo</h3>
-                    </button>
-                </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>Carlos Hernán Carcacha más conocido como Carca, es un músico argentino de rock. Wikipedia
-                            Nacimiento: 1971 (edad 52 años), Ciudad Evita</p>
+            <article class="card text-bg-dark mb-3" id="bateria">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/integrantes/bateristaprincipal.png" class="img-fluid rounded-start" alt="baterista en primer plano">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Bateria: Javier Robledo</h3>
+                            <p class="card-text">Javier Robledo es un baterista con más de 25 años detrás de los tachos
+                                que comenzó desde temprana a edad a relacionarse con la música y con la formación
+                                profesional.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                 </div>
+            </article>
+
+            <div class="volverAlInicio">
+                <a href="#inicio"><small>Volver al Inicio</small></a>
             </div>
 
-            <div>
-                <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        <h3>Guitarra</h3>
-                    </button>
-                </h2>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>Mariano Gabriel Domínguez, más conocido como Mariano Roger (Argentina, 8 de julio de 1969),
-                            es un guitarrista de la banda de rock Babasónicos. Es hijo del comediante Rolo Puente.</p>
+            <article class="card text-bg-dark mb-3" id="bio">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/integrantes/biografiaprincipal.png" class="img-fluid rounded-start" alt="foto de la banda">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Biografia</h3>
+                            <p class="card-text">La primera formación de Cielo Razzo:
+                                Cristian "Narvy" Narvaez (Bajo), Fernando "Nano" Aime (Guitarra), Claudio "Colo" Artaza
+                                (Guitarra), Gabriel Uroz (Batería) y Pablo "Polilla" Pino (Voz).</p>
+
+                            <p> Luego de un tiempo deja la banda Claudio Artaza y es reemplazado por Sergio "Pipi"
+                                Martínez, lo mismo ocurre con Gabiriel Uroz que en noviembre de ese año es remplazado
+                                por Pablo "Largo" Caruzo. La banda queda formada por: Pablo "Polilla" Pino (Voz),
+                                Cristian "Narvi" Narvaez (Bajo), Fernando "Nano" Aime (Guitarra), Sergio "Pipi" Martínez
+                                (Guitarra) y Pablo "Largo" Caruso (Batería).</p>
+
+                            <p> A comienzos de 1994 la banda se presenta en la fiesta organizada por FM Horizonte, en el
+                                Añejo Bar, concurriendo al mismo aproximadamente unas 350 personas. En febrero del mismo
+                                año son invitados por la Secretaría de Cultura de la ciudad de Rosario para formar parte
+                                de un evento que se llevaría a cabo en la Rambla Cataluña, dónde comparten escenario con
+                                el grupo Sudaca y Edad Media. A mediados de año, Sergio Martínez deja la banda y se suma
+                                en su reemplazo Adrián "Gato" Alessi. Ya con Alessi como nuevo integrante, la banda
+                                comienza a girar por el ambiente under de la ciudad, haciendo presentaciones en lugares
+                                como Orange y Tercer mundo con una muy buena aceptación del público.</p>
+
+
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
                     </div>
                 </div>
+            </article>
+
+            <div class="volverAlInicio">
+                <a href="#inicio"><small>Volver al Inicio</small></a>
             </div>
 
+            <article class="card text-bg-dark mb-3" id="influencias">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/integrantes/influenciasprincipal.png" class="img-fluid rounded-start" alt="foto del torso de una remera de los stones">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Influencias</h3>
+                            <p class="card-text">Las influencias más grandes siempre fueron Pearl Jam, Luis Alberto
+                                Spinetta, Soda
+                                Stereo, Sumo y Las Pelotas, referentes actuales de nuestro rock nacional.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="volverAlInicio">
+                <a href="#inicio"><small>Volver al Inicio</small></a>
+            </div>
+
+            <article class="card text-bg-dark mb-3" id="discografia">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/logonormal.jpg" class="img-fluid rounded-start" alt="logo de la banda tribus">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Discografia</h3>
+                            <p class="card-text">En junio de 2000, Cielo Razzo ingresa al estudio de grabación Del
+                                Camote Récords de la localidad Rosarina. Luego de realizar todo el estudio en un periodo
+                                de 6 meses, se logra realizar los trabajos de mezcla y masterización. Gracias a la ayuda
+                                de Fede y Willy, hermanos del Pino y el Almirón, respectivamente. Se simplifican los
+                                trabajos de diseño y arte del disco.</p>
+                            <p>Con una gran difusión de los medios, Cielo Razzo convoca a su gente para grabar su primer
+                                video en vivo. El tema elegido es el primer corte difusión "Carne 2", el evento se
+                                realiza en la disco Ra que se encuentra ubicado en el complejo Glamour de Fisherton,
+                                1000 fanes asisten a dicho show. Días más tarde, es difundido por canales de cable de
+                                Buenos Aires y de Rosario; y en ciertas páginas especializadas nombran como "Banda
+                                revelación del año"'.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="volverAlInicio">
+                <a href="#inicio"><small>Volver al Inicio</small></a>
+            </div>
+
+            <article class="card text-bg-dark mb-3" id="recitales">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../images/integrantes/recitalesprincipal.png" class="img-fluid rounded-start" alt="foto de banda tocando en vivo silueta">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Recitales</h3>
+                            <p class="card-text">Cielo Razzo despide el 2022 en La Trastienda, CABA, el próximo 28 de
+                                diciembre, en lo que será la antesala de un año muy especial, preparando los festejos de
+                                sus 30 años de trayectoria que vendrán con un nuevo disco bajo el brazo y muchas
+                                sorpresas.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
 
 
 
+        <!-- contenido fin -->
 
+        <!-- Footer Inicio -->
 
-            <!-- contenido fin -->
-
-            <!-- Footer Inicio -->
-
-            <footer class="footer">
+        <footer class="footer">
+            <div class="pieinicio">
+                <div class="redesinicio">
+                    <a href="https://www.facebook.com/tribusoficialrock/"><img src="../images/icons/facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://www.instagram.com/whiatribus_rock/?igshid=MDM4ZDc5MmU%3D"><img
+                            src="../images/icons/instagram.png" alt="instagram"></a>
+                    <a href="https://open.spotify.com/artist/09SuCCckgwByzmE1xwH7OT?si=RMPYP_7yS_SfT0iV3iX8NA&nd=1"><img
+                            src="../images/icons/spotify.png" alt="spotify"></a>
+                </div>
                 <div class="pieinicio">
-                    <div class="redesinicio">
-                        <a href="https://www.facebook.com/tribusoficialrock/"><img src="../images/icons/facebook.png"
-                                alt="facebook"></a>
-                        <a href="https://www.instagram.com/whiatribus_rock/?igshid=MDM4ZDc5MmU%3D"><img
-                                src="../images/icons/instagram.png" alt="instagram"></a>
-                        <a href="https://open.spotify.com/artist/09SuCCckgwByzmE1xwH7OT?si=RMPYP_7yS_SfT0iV3iX8NA&nd=1"><img
-                                src="../images/icons/spotify.png" alt="spotify"></a>
-                    </div>
-                    <div class="pieinicio">
-                        <small class="copyinicio">2023 WhiaTribus Rock / Todos los derechos reservados</small>
-                    </div>
+                    <small class="copyinicio">2023 WhiaTribus Rock / Todos los derechos reservados</small>
                 </div>
-            </footer>
+            </div>
+        </footer>
 
-            <!-- footer fin -->
+        <!-- footer fin -->
 
     </main>
 
